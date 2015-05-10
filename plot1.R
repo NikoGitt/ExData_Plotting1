@@ -14,7 +14,7 @@ hus<-Hus[sub1,]
 hus2<-Hus[sub2,]
 husDfr<-rbind(hus,hus2)
 png("plot1.png") #Creates the PNG file
-hist(as.numeric(husDfr[,3]),col="red",main=("Global Active Power"),xlab="Global Active Power (Killowatts)")
+hist(as.numeric(husDfr[,3]),col="red",main=("Global Active Power"),xlab="Global Active Power (killowatts)")
 dev.off()
 
 rm(list=setdiff(ls(),"husDfr"))
